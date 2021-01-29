@@ -37,6 +37,8 @@ body {
     display: flex;
     align-items:center;
     cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
 }
 .button-icon, .button-price {
     margin-right: 10px;
@@ -51,10 +53,16 @@ body {
 .slide {
     padding-top: 90px;
     padding-bottom: 110px;
+    min-height: 568px;
 }
 .slide-1 {
     background: #B4D1E0 url('../img/slide-img-1.png') no-repeat top right 40%;
-
+}
+.slide-2 {
+    background: #ae9eed url('../img/slide-img-2.png') no-repeat top right 40%;
+}
+.slide-3 {
+    background: #9a96ab url('../img/slide-img-3.png') no-repeat top right 40%;
 }
 .label {
     background: #3DC47E;
@@ -84,6 +92,7 @@ body {
     top: 50%;
     width: 100%;
     transform: translateY(-50%);
+    z-index: 9;
 }
 .slider-button {
     background-color: transparent;
@@ -174,6 +183,8 @@ body {
     position: relative;
     text-align: center;
     padding: 30px 35px 35px 35px;
+    display: block;
+    text-decoration: none;
 }
 .goods-card .label {
     position: absolute;
@@ -241,4 +252,33 @@ body {
 }
 .top-link-text {
     margin-right: 15px;
+}
+@media (max-width: 1200px) {
+    .slide-1 {
+        background-size: cover; 
+    }
+    .card-3 {
+        background-size: cover;
+    }
+}
+@media (max-width: 992px) {
+    .slider-nav {
+        display: none;
+    }
+}
+@media (max-width: 567px) {
+    .slide-title {
+        font-size: 36px;
+        line-height: 1.4;
+        margin-bottom: 0;
+    }
+    .card {
+        background-position: left top;
+        padding: 30px;
+        min-height: 300px;
+    }
+    .card-4 {
+        background-position: right top;
+    }
+
 }
